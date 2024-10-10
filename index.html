@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cara Menyeduh V60</title>
+    <!-- Menambahkan Font Awesome CDN untuk ikon Instagram -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -12,93 +14,233 @@
             padding: 0;
             background-color: #f4f4f4;
         }
+
         .container {
             width: 80%;
             margin: auto;
             overflow: hidden;
         }
+
         header {
             background: #333;
             color: #fff;
-            padding-top: 30px;
+            padding-top: 10px;
             min-height: 70px;
             border-bottom: #bbb 3px solid;
             text-align: center;
         }
+
         header h1 {
             margin: 0;
             font-size: 24px;
         }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+            padding: 10px 0;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        nav ul li a:hover {
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
         .content {
             padding: 20px;
             background: #fff;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 40px;
         }
+
         h2 {
             color: #333;
         }
-        ol {
+
+        ul, ol {
             margin: 0;
             padding-left: 20px;
         }
+
         li {
             margin-bottom: 10px;
         }
+
+        img {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        /* Gaya tombol kembali ke atas */
+        .back-to-top {
+            display: block;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .back-to-top a {
+            text-decoration: none;
+            padding: 10px 15px;
+            background-color: #333;
+            color: #fff;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        .back-to-top a:hover {
+            background-color: #555;
+        }
+
+        /* Animasi untuk header */
+        header h1 {
+            animation: slideDown 1s ease-out;
+        }
+
+        @keyframes slideDown {
+            from {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Footer dengan ikon Instagram */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        footer a {
+            color: #fff;
+            margin: 0 10px;
+            font-size: 24px;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        footer a:hover {
+            color: #ddd;
+        }
+
     </style>
 </head>
 <body>
-    <header>
+    <header id="atas">
         <div class="container">
             <h1>CARA MENYEDUH KOPI DENGAN METODE V60, NGOPI ALA CAFE DI RUMAH</h1>
         </div>
+        <nav>
+            <ul>
+                <li><a href="#bahan">Bahan-bahan</a></li>
+                <li><a href="#peralatan">Peralatan</a></li>
+                <li><a href="#langkah">Langkah-langkah</a></li>
+                <li><a href="#kontak">Kontak</a></li>
+            </ul>
+        </nav>
     </header>
-                     <img src="kopi.jpg">
+
     <div class="container">
-        <div class="content">
+        <!-- Bahan-bahan -->
+        <div class="content" id="bahan">
+            <img src="kopi.jpg" alt="Kopi V60">
             <h2>Bahan-bahan:</h2>
             <ul>
                 <li>Biji kopi</li>
                 <li>Air panas</li>
                 <li>Kertas filter V60</li>
             </ul>
-            <h2>Selain itu juga menbutuhkan peralatan seperti:</h2>
+            <div class="back-to-top">
+                <a href="#atas">Kembali ke atas</a>
+            </div>
+        </div>
+
+        <!-- Peralatan -->
+        <div class="content" id="peralatan">
+            <h2>Peralatan yang Dibutuhkan:</h2>
             <ul>
                 <li>Grinder</li>
                 <li>V60 dripper, Timer, Server</li>
-                <li>Pour ever leher angsa, Elektric water kettel</li>
+                <li>Pour over leher angsa, Elektrik water kettle</li>
             </ul>
-        <img src="kopi v2.jpg">
-            <h2>Langkah-langkah:</h2>
+            <img src="kopi_v2.jpg" alt="Peralatan V60">
+            <div class="back-to-top">
+                <a href="#atas">Kembali ke atas</a>
+            </div>
+        </div>
+
+        <!-- Langkah-langkah -->
+        <div class="content" id="langkah">
+            <h2>Langkah-langkah Menyeduh:</h2>
             <ol>
-                <li>Gunakan rasio secara 1:15, yaitu 1 gram kopi dengan 15 ml air.</li>
-                <li>Giling biji kopi secara medium, tidak terlalu halus</li>
-                <li>Bilas V60 dan kertas filter V60 dengan air panas agar suhu kopi lebih stabil</li>
+                <li>Gunakan rasio 1:15, yaitu 1 gram kopi dengan 15 ml air.</li>
+                <li>Giling biji kopi secara medium, tidak terlalu halus.</li>
+                <li>Bilas V60 dan kertas filter V60 dengan air panas agar suhu kopi lebih stabil.</li>
                 <li>Tuang 30 gram air dan diamkan selama 30 detik untuk membuang gas di dalam kopi.</li>
-                <li>Proses seduh umumnya selesai dalam waktu 2 menit 20 detik</li>
-                <li>Jika ingin rasa kopi lebih intens, perpanjang waktu tuang air setelah 1 menit 10 detik</li>
-                <Ii>Kopi arabika cocok diseduh dengan teknik V60 karena memiliki rasa sedikit rasa asam, kental di mulut, pahit, namun dengan tekastur yang lebih halus</Ii>
+                <li>Proses seduh umumnya selesai dalam waktu 2 menit 20 detik.</li>
+                <li>Jika ingin rasa kopi lebih intens, perpanjang waktu tuang air setelah 1 menit 10 detik.</li>
+                <li>Kopi Arabika cocok diseduh dengan teknik V60 karena memiliki sedikit rasa asam, kental di mulut, pahit, namun dengan tekstur yang lebih halus.</li>
                 <li>Kopi siap dinikmati!</li>
-        <img src="minum kopi.jpeg"
             </ol>
+            <img src="minum_kopi.jpeg" alt="Menikmati kopi">
+            <div class="back-to-top">
+                <a href="#atas">Kembali ke atas</a>
+            </div>
+        </div>
+
+        <!-- Form Kontak -->
+        <div class="content" id="kontak">
+            <h2>Form Kontak</h2>
+            <form action="/submit-form" method="post">
+                <label for="name">Nama:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="message">Komentar:</label><br>
+                <textarea id="message" name="message" rows="4" required></textarea><br><br>
+
+                <button type="submit">Kirim</button>
+            </form>
+            <div class="back-to-top">
+                <a href="#atas">Kembali ke atas</a>
+            </div>
         </div>
     </div>
-</body>
-</html>
 
-<h2>Form Kontak</h2>
-    <form action="/submit-form" method="post">
-        <label for="name">Nama:</label><br>
-        <input type="text" id="name" name="name" required><br><br>
-
-        <label for="email">Email:</label><br>
-        <input type="email" id="email" name="email" required><br><br>
-
-        <label for="message">Komentar:</label><br>
-        <textarea id="message" name="message" rows="4" required></textarea><br><br>
-
-        <button type="submit">Kirim</button>
-    </form>
-    <a href="#atas">kembali ke atas</a>
+    <!-- Footer -->
+    <footer>
+        <p>Ikuti kami di Instagram</p>
+        <a href="https://www.instagram.com/evanputra976/profilecard/?igsh=MWNkbnNmYTRmY254MQ==" target="_blank">
+            <i class="fab fa-instagram"></i>
+        </a>
+    </footer>
 </body>
 </html>
